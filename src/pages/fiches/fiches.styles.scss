@@ -1,0 +1,56 @@
+.fiches-container {
+    h2{
+        text-align: center;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: aliceblue;
+    img{
+        width: 60%;
+        padding-top:3vh;
+    }
+    ul{
+        text-align: center;
+    }
+    .information-inscription {
+        margin-top: 5vh;
+      .course-card-cta {
+        padding: 1.5rem 3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #fff;
+        background-image: linear-gradient(to right, #15151598 0%, #16213e 100%);
+        border-radius: 0.8rem;
+        text-decoration: none;
+        &:hover{
+          background-image: linear-gradient(to right, #2b2e4a 0%, #53354a 100%);
+        }
+      }
+    }
+    @media  screen and(max-width:486px) {
+        .information-inscription {
+            margin-top: 4vh;
+            .course-card-cta{
+                font-size: 0.8rem;
+            }
+            
+    }}
+    @media  screen and(max-width:360px) {
+        .information-inscription {
+            .course-card-cta{
+                font-size: 0.64rem;
+            }
+    }}
+    @media  screen and(max-width:290px) {
+        .information-inscription {
+            .course-card-cta{
+                font-size: 0.4rem;
+            }
+    }}
+    
+}

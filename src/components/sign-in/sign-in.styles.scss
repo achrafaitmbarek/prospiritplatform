@@ -1,0 +1,33 @@
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 10px 0;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width:868px){
+  .sign-in{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 5px antiquewhite;
+    transition: box-shadow 0.6s linear;; 
+    border-radius: 25px;
+    form{
+      width: 100%;
+      .buttons {
+       flex-direction: column; 
+
+      }
+    }
+    &:hover{
+       box-shadow: 0px 0px 0px 10px #6b38383b;
+    }
+    margin-top: 1rem;
+  }
+}

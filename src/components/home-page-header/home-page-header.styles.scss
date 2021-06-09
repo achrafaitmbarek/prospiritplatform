@@ -1,0 +1,138 @@
+.header-container {
+  background-image: url("../../assets/c-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  .home-page-infos {
+    color: #e2e9ef;
+    display: block;
+    text-align: center;
+    padding: 100px 390px 0px 0px;
+    font-size: 24px;
+    .title {
+        padding-right: 24px;
+        margin: 78px 153px 0px 150px;
+        text-transform: uppercase; 
+        background-color: #4b565f52;
+        border-radius: 100px;
+    }
+    .option-home-page-header {
+      position: relative;
+      color: aliceblue;
+      display: inline-block;
+      letter-spacing: 2.5px;
+      overflow: hidden;
+      transition: 0.2s;
+      background-color: #4b565f52;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 10px;
+      font-size: 25px;
+      &:hover {
+        color: #dee4eb;
+        background: #0e3b5f9f;
+        box-shadow: 0 0 10px #0e3b5f9f, 0 0 40px #0e3b5f9f, 0 0 80px #2195f37c;
+        transition-delay: 1 s;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .home-page-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 20px 60px;
+
+    .logo-container {
+    }
+
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      cursor: pointer;
+
+      .option {
+        padding: 10px 15px;
+        background-color: #2d5377a2;
+        margin-right: 15px;
+        border-radius: 15px;
+        text-transform: uppercase; 
+        background-color: #4b565f52;
+        border-radius: 10px;
+        color: #ffffff;
+        &:hover {
+            color: #dee4eb;
+            background: #0e3b5f9f;
+            box-shadow: 0 0 10px #0e3b5f9f, 0 0 40px #0e3b5f9f, 0 0 80px #2195f37c;
+            transition-delay: 1 s;
+            border-radius: 10px;
+          }
+      }
+    }
+  }
+  @media screen and (max-width:1484px){
+    .home-page-infos {
+    padding: 100px 0px 0px 0px;
+    font-size:20px;
+    .title {
+      margin: 50px 35px 0px 35px; 
+    }
+    }
+  }
+  @media screen and (max-width:596px){
+   .home-page-infos {
+    padding: 35px 0px 0px 0px;
+    font-size: 10px; 
+   } 
+  }
+}
+@media screen and (max-width:941px){
+  .header-container {
+   height: 260px; 
+   .home-page-infos {
+    padding: 0px 0px 0px 0px;
+    font-size: 10px; 
+    .title {
+     margin: 0px; 
+   }
+   .option-home-page-header {
+     padding: 0px;
+     margin: 2.5px 50px;
+     background: #062946bb; 
+     font-size: 16px;  
+   }
+   }
+   .home-page-header {
+    margin: 0px;
+    padding: 0px;
+    height: 70px;
+    .logo-container {
+     #website-logo{
+       width: 60%;
+       padding-top: 10px;
+     }
+   }
+   .options {
+     font-size: 10px;
+     padding: 0px;
+     .option {
+     background: #062946bb;
+     padding: 7px 5px;
+     }
+   }
+   }
+  }
+}
+@media screen and (max-width:376px){
+  .header-container {
+   width: 103%; 
+  }
+}
